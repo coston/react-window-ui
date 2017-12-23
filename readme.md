@@ -19,7 +19,7 @@ React components for fast presentational window ui.
 npm install --save react-window-ui
 ```
 
-### Window Ui
+## Window UI
 
 - Browser (Like Mac OS X window UI)
 - Terminal (Like Hyper terminal)
