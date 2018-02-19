@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Browser 1`] = `
+<section
+  background="#fff"
+  barHeight="2rem"
+  border="0.05rem solid #AEAEAE"
+  className="sc-bdVaJa ZQZxz"
+  divider="0.05rem solid #ccc"
+  padding="2.25rem .5rem .5rem .5rem"
+  topbarColor="#E6E6E6"
+/>
+`;
+
+exports[`Render Browser with props 1`] = `
+<section
+  background="#fff"
+  barHeight="2rem"
+  border="0.05rem solid #AEAEAE"
+  className="sc-bdVaJa idQVTZ"
+  divider="0.05rem solid #ccc"
+  padding="2.25rem .5rem .5rem .5rem"
+  topbarColor="#E6E6E6"
+/>
+`;
+
+exports[`Render MacTerminal 1`] = `
+<section
+  background="#000"
+  barHeight="1.4rem"
+  border="0.0rem solid #1D1F21"
+  className="sc-htpNat gqWbvC"
+  divider="0.05rem solid #1D1F21"
+  padding="2.25rem .5rem .5rem .5rem"
+  topbarColor="#E6E6E6"
+/>
+`;
+
+exports[`Render MacTerminal with props 1`] = `
+<section
+  background="#000"
+  barHeight="1.4rem"
+  border="0.0rem solid #1D1F21"
+  className="sc-htpNat jSjRGV"
+  divider="0.05rem solid #1D1F21"
+  padding="2.25rem .5rem .5rem .5rem"
+  topbarColor="#E6E6E6"
+/>
+`;
+
+exports[`Render Terminal 1`] = `
+<section
+  background="#000"
+  barHeight="2rem"
+  border="0.05rem solid #000"
+  className="sc-bwzfXH cvsfY"
+  divider="0.05rem solid #000"
+  padding="2.25rem .5rem .5rem .5rem"
+  topbarColor="#000"
+/>
+`;
+
+exports[`Render Terminal with props 1`] = `
+<section
+  background="#000"
+  barHeight="2rem"
+  border="0.05rem solid #000"
+  className="sc-bwzfXH jbQPmW"
+  divider="0.05rem solid #000"
+  padding="2.25rem .5rem .5rem .5rem"
+  topbarColor="#000"
+/>
+`;
