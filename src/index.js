@@ -1,23 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const Browser = styled.section.attrs({
-  barHeight: props => props.barHeight || '2rem',
-  padding: props => props.padding || '2.25rem .5rem .5rem .5rem',
-  topbarColor: props => props.topbarColor || '#E6E6E6',
-  background: props => props.background || '#fff',
-  border: props => props.border || '0.05rem solid #AEAEAE',
-  divider: props => props.divider || '0.05rem solid #ccc',
-})`
+export const Browser = styled.section`
   position: relative;
-  border: ${props => props.border};
+  border: ${props => props.border || '0.05rem solid #AEAEAE'};
   border-radius: 0.5rem;
   box-shadow: 0 20px 68px rgba(0, 0, 0, 0.55);
-  background: ${props => props.background};
+  background: ${props => props.background || '#fff'};
   max-width: 100%;
   min-height: 22rem;
   z-index: 2;
-  padding: ${props => props.padding};
+  padding: ${props => props.padding || '2.25rem .5rem .5rem .5rem'};
   &:after {
     content: '';
     position: absolute;
@@ -39,34 +32,27 @@ export const Browser = styled.section.attrs({
     top: 0;
     left: 0;
     width: 100%;
-    height: ${props => props.barHeight};
-    border-bottom: ${props => props.divider};
+    height: ${props => props.barHeight || '2rem'};
+    border-bottom: ${props => props.divider || '0.05rem solid #ccc'};
     z-index: 1;
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
     background-clip: padding-box;
-    background: ${props => props.topbarColor};
+    background: ${props => props.topbarColor || '#E6E6E6'};
   }
 `
 
-export const Terminal = styled.section.attrs({
-  barHeight: props => props.barHeight || '2rem',
-  padding: props => props.padding || '2.25rem .5rem .5rem .5rem',
-  topbarColor: props => props.topbarColor || '#000',
-  background: props => props.background || '#000',
-  border: props => props.border || '0.05rem solid #000',
-  divider: props => props.divider || '0.05rem solid #000',
-})`
+export const Terminal = styled.section`
   position: relative;
-  border: ${props => props.border};
+  border: ${props => props.border || '0.05rem solid #000'};
   border-radius: 0.5rem;
   color: white;
   box-shadow: 0 20px 68px rgba(0, 0, 0, 0.55);
-  background: ${props => props.background};
+  background: ${props => props.background || '#000'};
   max-width: 100%;
   min-height: 22rem;
   z-index: 2;
-  padding: ${props => props.padding};
+  padding: ${props => props.padding || '2.25rem .5rem .5rem .5rem'};
   &:after {
     content: '';
     position: absolute;
@@ -88,35 +74,28 @@ export const Terminal = styled.section.attrs({
     top: 0;
     left: 0;
     width: 100%;
-    height: ${props => props.barHeight};
-    background: ${props => props.background};
-    border-bottom: ${props => props.divider};
+    height: ${props => props.barHeight || '2rem'};
+    background: ${props => props.background || '#000'};
+    border-bottom: ${props => props.divider || '0.05rem solid #000'};
     z-index: 1;
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
     background-clip: padding-box;
-    background: ${props => props.topbarColor};
+    background: ${props => props.topbarColor || '#000'};
   }
 `
 
-export const MacTerminal = styled.section.attrs({
-  barHeight: props => props.barHeight || '1.4rem',
-  padding: props => props.padding || '2.25rem .5rem .5rem .5rem',
-  topbarColor: props => props.topbarColor || '#E6E6E6',
-  background: props => props.background || '#000',
-  border: props => props.border || '0.0rem solid #1D1F21',
-  divider: props => props.divider || '0.05rem solid #1D1F21',
-})`
+export const MacTerminal = styled.section`
   position: relative;
-  border: ${props => props.border};
+  border: ${props => props.border || '0.0rem solid #1D1F21'};
   border-radius: 0.5rem;
   color: white;
   box-shadow: 0 20px 68px rgba(0, 0, 0, 0.55);
-  background: ${props => props.background};
+  background: ${props => props.background || '#000'};
   max-width: 100%;
   min-height: 22rem;
   z-index: 2;
-  padding: ${props => props.padding};
+  padding: ${props => props.padding || '2.25rem .5rem .5rem .5rem'};
   &:after {
     content: '';
     position: absolute;
@@ -140,12 +119,12 @@ export const MacTerminal = styled.section.attrs({
     left: 0;
     margin-bottom: 5em;
     width: 100%;
-    height: ${props => props.barHeight};
-    border-bottom: ${props => props.divider};
+    height: ${props => props.barHeight || '1.4rem'};
+    border-bottom: ${props => props.divider || '0.05rem solid #1D1F21'};
     z-index: 1;
     border-top-left-radius: 0.4rem;
     border-top-right-radius: 0.4rem;
     background-clip: padding-box;
-    background: ${props => props.topbarColor};
+    background: ${props => props.topbarColor || '#E6E6E6'};
   }
 `
