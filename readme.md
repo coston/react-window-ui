@@ -1,6 +1,6 @@
 # react-window-ui 🖼✨
 
-[![Coverage Status](https://coveralls.io/repos/github/coston/react-window-ui/badge.svg?branch=master)](https://coveralls.io/github/ua-oira/crimson-tide?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/coston/react-window-ui/badge.svg?branch=master)](https://coveralls.io/github/ua-oira/react-window-ui?branch=master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/coston/react-window-ui.svg)](https://greenkeeper.io/)
 [![Travis](https://img.shields.io/travis/coston/react-window-ui.svg)](https://travis-ci.org/coston/react-window-ui)
 [![npm version](https://badge.fury.io/js/react-window-ui.svg)](https://www.npmjs.com/package/react-window-ui)
