@@ -1,130 +1,96 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const Browser = styled.section`
-  position: relative;
-  border: ${props => props.border || '0.05rem solid #AEAEAE'};
-  border-radius: 0.5rem;
+const standard = props => `
+  padding: ${props.padding || '2.25em .5em .5em .5em'};
+  resize: ${(props.resize && 'both') || 'none'};
+  min-height: ${props.minHeight || '11em'};
+  min-width: ${props.minWidth || '11em'};
+  max-height: ${props.maxHeight || null};
+  max-width: ${props.maxWidth || '100%'};
+  width: ${props.width || '100%'};
+  height: ${props.height || null};
   box-shadow: 0 20px 68px rgba(0, 0, 0, 0.55);
-  background: ${props => props.background || '#fff'};
-  max-width: 100%;
-  min-height: 22rem;
+  border-radius: 0.5em;
+  position: relative;
+  overflow: auto;
   z-index: 2;
-  padding: ${props => props.padding || '2.25rem .5rem .5rem .5rem'};
-  &:after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    top: 0.8rem;
-    left: 0.8rem;
-    z-index: 2;
-    border-radius: 50%;
-    background: ${props => (props.grayscale ? '#8D8D92' : '#f85955')};
-    box-shadow: ${props =>
-      props.grayscale
-        ? '0 0 0 0.2em #8D8D92,  1.1em 0 0 0.2em #8D8D92, 2.2em 0 0 0.2em #8D8D92'
-        : '0 0 0 0.2em #f85955,  1.2em 0 0 0.2em #fbbe3f, 2.3em 0 0 0.2em #45cc4b'};
+`
+const after = props => `
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  z-index: 2;
+  border-radius: 50%;
+  background: ${props.grayscale ? '#8D8D92' : '#f85955'};
+  box-shadow: ${
+    props.grayscale
+      ? '0 0 0 0.2em #8D8D92,  1.1em 0 0 0.2em #8D8D92, 2.2em 0 0 0.2em #8D8D92'
+      : '0 0 0 0.2em #f85955,  1.2em 0 0 0.2em #fbbe3f, 2.3em 0 0 0.2em #45cc4b'
+  };
+}
+`
+
+const before = () => `
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1;
+border-top-left-radius: 0.4em;
+border-top-right-radius: 0.4em;
+background-clip: padding-box;
+`
+
+export const Browser = styled.div`
+  border: ${props => props.border || '0.05em solid #AEAEAE'};
+  background: ${props => props.background || '#fff'};
+  ${standard} &:after {
+    top: 0.8em;
+    left: 0.8em;
+    ${after};
   }
   &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: ${props => props.barHeight || '2rem'};
-    border-bottom: ${props => props.divider || '0.05rem solid #ccc'};
-    z-index: 1;
-    border-top-left-radius: 0.4rem;
-    border-top-right-radius: 0.4rem;
-    background-clip: padding-box;
+    height: ${props => props.barHeight || '2em'};
+    border-bottom: ${props => props.divider || '0.05em solid #ccc'};
     background: ${props => props.topbarColor || '#E6E6E6'};
+    ${before};
   }
 `
 
 export const Terminal = styled.section`
-  position: relative;
-  border: ${props => props.border || '0.05rem solid #000'};
-  border-radius: 0.5rem;
-  color: white;
-  box-shadow: 0 20px 68px rgba(0, 0, 0, 0.55);
+  border: ${props => props.border || '0.05em solid #000'};
   background: ${props => props.background || '#000'};
-  max-width: 100%;
-  min-height: 22rem;
-  z-index: 2;
-  padding: ${props => props.padding || '2.25rem .5rem .5rem .5rem'};
-  &:after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    top: 0.8rem;
-    left: 0.8rem;
-    z-index: 2;
-    border-radius: 50%;
-    background: ${props => (props.grayscale ? '#8D8D92' : '#f85955')};
-    box-shadow: ${props =>
-      props.grayscale
-        ? '0 0 0 0.2em #8D8D92,  1.1em 0 0 0.2em #8D8D92, 2.2em 0 0 0.2em #8D8D92'
-        : '0 0 0 0.2em #f85955,  1.1em 0 0 0.2em #fbbe3f, 2.2em 0 0 0.2em #45cc4b'};
+  color: white;
+  ${standard} &:after {
+    top: 0.8em;
+    left: 0.8em;
+    ${after};
   }
   &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: ${props => props.barHeight || '2rem'};
+    height: ${props => props.barHeight || '2em'};
     background: ${props => props.background || '#000'};
-    border-bottom: ${props => props.divider || '0.05rem solid #000'};
-    z-index: 1;
-    border-top-left-radius: 0.4rem;
-    border-top-right-radius: 0.4rem;
-    background-clip: padding-box;
+    border-bottom: ${props => props.divider || '0.05em solid #000'};
     background: ${props => props.topbarColor || '#000'};
+    ${before};
   }
 `
 
 export const MacTerminal = styled.section`
-  position: relative;
-  border: ${props => props.border || '0.0rem solid #1D1F21'};
-  border-radius: 0.5rem;
-  color: white;
-  box-shadow: 0 20px 68px rgba(0, 0, 0, 0.55);
+  border: ${props => props.border || '0.0em solid #1D1F21'};
   background: ${props => props.background || '#000'};
-  max-width: 100%;
-  min-height: 22rem;
-  z-index: 2;
-  padding: ${props => props.padding || '2.25rem .5rem .5rem .5rem'};
-  &:after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    top: 0.5rem;
-    left: 0.6rem;
-    z-index: 2;
-    border-radius: 50%;
-    background: #f85955;
-    background: ${props => (props.grayscale ? '#8D8D92' : '#f85955')};
-    box-shadow: ${props =>
-      props.grayscale
-        ? '0 0 0 0.2em #8D8D92,  1.1em 0 0 0.2rem #8D8D92, 2.2em 0 0 0.2rem #8D8D92'
-        : '0 0 0 0.2rem #f85955,  1.1rem 0 0 0.2rem #fbbe3f, 2.2rem 0 0 0.2rem #45cc4b'};
+  color: white;
+  ${standard} &:after {
+    top: 0.5em;
+    left: 0.6em;
+    ${after};
   }
   &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-bottom: 5em;
-    width: 100%;
-    height: ${props => props.barHeight || '1.4rem'};
-    border-bottom: ${props => props.divider || '0.05rem solid #1D1F21'};
-    z-index: 1;
-    border-top-left-radius: 0.4rem;
-    border-top-right-radius: 0.4rem;
-    background-clip: padding-box;
+    height: ${props => props.barHeight || '1.4em'};
+    border-bottom: ${props => props.divider || '0.05em solid #1D1F21'};
     background: ${props => props.topbarColor || '#E6E6E6'};
+    ${before};
   }
 `
