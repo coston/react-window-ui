@@ -1,6 +1,6 @@
 {
   "name": "react-window-ui",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React components for fast presentational window ui",
   "main": "dist/index.js",
   "author": "Coston Perkins <coston.perkins@ua.edu> (https://coston.io)",
@@ -46,20 +46,20 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "core-js": "^2.5.5",
-    "coveralls": "^3.0.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.3",
+    "core-js": "^2.5.7",
+    "coveralls": "^3.0.2",
+    "enzyme": "^3.5.0",
+    "enzyme-adapter-react-16": "^1.3.1",
+    "enzyme-to-json": "^3.3.4",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^22.4.3",
-    "prettier": "^1.12.1",
-    "prop-types": "^15.6.1",
-    "react": "^16.3.2",
+    "jest": "^22.4.4",
+    "prettier": "^1.14.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
     "react-addons-test-utils": "^15.6.2",
-    "react-dom": "^16.3.2",
+    "react-dom": "^16.4.2",
     "react-shallow-output": "^0.2.0",
-    "react-test-renderer": "^16.3.2"
+    "react-test-renderer": "^16.4.2"
   },
   "keywords": [
     "react",
@@ -77,6 +77,6 @@
     "test": "test"
   },
   "dependencies": {
-    "styled-components": "^3.2.6"
+    "styled-components": "^3.4.5"
   }
 }
