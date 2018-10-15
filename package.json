@@ -77,6 +77,6 @@
     "test": "test"
   },
   "dependencies": {
-    "styled-components": "^3.4.5"
+    "styled-components": "^4.0.0"
   }
 }
