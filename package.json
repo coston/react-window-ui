@@ -46,20 +46,19 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "core-js": "^2.5.7",
+    "core-js": "^2.6.5",
     "coveralls": "^3.0.2",
-    "enzyme": "^3.6.0",
-    "enzyme-adapter-react-16": "^1.4.0",
-    "enzyme-to-json": "^3.3.4",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "enzyme-to-json": "^3.3.5",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^22.4.4",
+    "jest": "^24.1.0",
     "prettier": "^1.14.2",
-    "prop-types": "^15.6.2",
-    "react": "^16.4.2",
+    "react": "^16.8.2",
     "react-addons-test-utils": "^15.6.2",
-    "react-dom": "^16.4.2",
+    "react-dom": "^16.8.2",
     "react-shallow-output": "^0.2.0",
-    "react-test-renderer": "^16.4.2"
+    "react-test-renderer": "^16.8.2"
   },
   "keywords": [
     "react",
@@ -77,6 +76,6 @@
     "test": "test"
   },
   "dependencies": {
-    "styled-components": "^3.4.5"
+    "styled-components": "^4.1.3"
   }
 }
