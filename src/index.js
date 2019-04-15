@@ -8,7 +8,6 @@ const standard = props => `
   min-width: ${props.minWidth || '11em'};
   max-height: ${props.maxHeight || null};
   max-width: ${props.maxWidth || '100%'};
-  width: ${props.width || '100%'};
   height: ${props.height || null};
   box-shadow: 0 20px 68px rgba(0, 0, 0, 0.55);
   border-radius: 0.5em;

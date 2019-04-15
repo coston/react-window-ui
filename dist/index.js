@@ -22,7 +22,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var standard = function standard(props) {
-  return '\n  padding: ' + (props.padding || '2.25em .5em .5em .5em') + ';\n  resize: ' + (props.resize && 'both' || 'none') + ';\n  min-height: ' + (props.minHeight || '11em') + ';\n  min-width: ' + (props.minWidth || '11em') + ';\n  max-height: ' + (props.maxHeight || null) + ';\n  max-width: ' + (props.maxWidth || '100%') + ';\n  width: ' + (props.width || '100%') + ';\n  height: ' + (props.height || null) + ';\n  box-shadow: 0 20px 68px rgba(0, 0, 0, 0.55);\n  border-radius: 0.5em;\n  position: relative;\n  overflow: auto;\n  z-index: 2;\n';
+  return '\n  padding: ' + (props.padding || '2.25em .5em .5em .5em') + ';\n  resize: ' + (props.resize && 'both' || 'none') + ';\n  min-height: ' + (props.minHeight || '11em') + ';\n  min-width: ' + (props.minWidth || '11em') + ';\n  max-height: ' + (props.maxHeight || null) + ';\n  max-width: ' + (props.maxWidth || '100%') + ';\n  height: ' + (props.height || null) + ';\n  box-shadow: 0 20px 68px rgba(0, 0, 0, 0.55);\n  border-radius: 0.5em;\n  position: relative;\n  overflow: auto;\n  z-index: 2;\n';
 };
 var after = function after(props) {
   return '\n  content: \'\';\n  position: absolute;\n  width: 6px;\n  height: 6px;\n  z-index: 2;\n  border-radius: 50%;\n  background: ' + (props.grayscale ? '#8D8D92' : '#f85955') + ';\n  box-shadow: ' + (props.grayscale ? '0 0 0 0.2em #8D8D92,  1.1em 0 0 0.2em #8D8D92, 2.2em 0 0 0.2em #8D8D92' : '0 0 0 0.2em #f85955,  1.2em 0 0 0.2em #fbbe3f, 2.3em 0 0 0.2em #45cc4b') + ';\n}\n';
