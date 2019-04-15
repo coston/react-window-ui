@@ -1,6 +1,6 @@
 {
   "name": "react-window-ui",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "React components for fast presentational window ui",
   "main": "dist/index.js",
   "author": "Coston Perkins <coston.perkins@ua.edu> (https://coston.io)",
