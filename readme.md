@@ -7,7 +7,6 @@
 [![npm](https://img.shields.io/npm/dm/react-window-ui.svg)](https://www.npmjs.com/package/react-window-ui)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
 
-
 ## Demo & Examples
 
 Live demo: [coston.io/react-window-ui](https://coston.io/react-window-ui/)
@@ -31,26 +30,27 @@ npm install --save react-window-ui
 ### Input
 
 ```js
-import React from 'react'
-import { Browser } from 'react-window-ui'
+import React from "react";
+import { Browser } from "react-window-ui";
 
 export default () => (
   <Browser>
     <h1>wow</h1>
   </Browser>
-)
+);
 ```
 
 ## Options
 
-| Prop        | Type     | Description                               |
-| ----------- | -------- | ----------------------------------------- |
-| barHeight   | `string` | height of the topbar                      |
-| divider     | `string` | css border values of topbar border-bottom |
-| padding     | `string` | css padding of content widow              |
-| topbarColor | `string` | color of topbar                           |
-| background  | `string` | color of main content window              |
-| border      | `string` | css border values of outer border         |
+| Prop        | Type      | Description                                               |
+| ----------- | --------- | --------------------------------------------------------- |
+| barHeight   | `string`  | height of the topbar                                      |
+| divider     | `string`  | css border values of topbar border-bottom                 |
+| padding     | `string`  | css padding of content widow                              |
+| topbarColor | `string`  | color of topbar                                           |
+| background  | `string`  | color of main content window                              |
+| border      | `string`  | css border values of outer border                         |
+| grayscale   | `boolean` | sets ui button to greyscale instead of red, yellow, green |
 
 ## Development
 
@@ -68,7 +68,7 @@ Please help make this react component better. Submit any issue and/or make a pul
 
 ### To Do
 
-* Write some good tests
+- Write some good tests
 
 ## License
 
