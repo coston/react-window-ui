@@ -50,6 +50,7 @@ export default () => (
 | background  | `string`  | color of main content window                              |
 | border      | `string`  | css border values of outer border                         |
 | grayscale   | `boolean` | sets ui button to greyscale instead of red, yellow, green |
+| boxShadow   | `string`  | customize box shadow styles                               |
 
 ## Development
 

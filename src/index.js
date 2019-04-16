@@ -9,7 +9,7 @@ const standard = props => `
   max-height: ${props.maxHeight || null};
   max-width: ${props.maxWidth || '100%'};
   height: ${props.height || null};
-  box-shadow: 0 20px 68px rgba(0, 0, 0, 0.55);
+  box-shadow: ${props.boxShadow ? props.boxShadow : '0 20px 68px rgba(0, 0, 0, 0.55)'};
   border-radius: 0.5em;
   position: relative;
   overflow: auto;

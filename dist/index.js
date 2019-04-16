@@ -44,7 +44,7 @@ function _templateObject() {
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var standard = function standard(props) {
-  return "\n  padding: ".concat(props.padding || '2.25em .5em .5em .5em', ";\n  resize: ").concat(props.resize && 'both' || 'none', ";\n  min-height: ").concat(props.minHeight || '11em', ";\n  min-width: ").concat(props.minWidth || '11em', ";\n  max-height: ").concat(props.maxHeight || null, ";\n  max-width: ").concat(props.maxWidth || '100%', ";\n  height: ").concat(props.height || null, ";\n  box-shadow: 0 20px 68px rgba(0, 0, 0, 0.55);\n  border-radius: 0.5em;\n  position: relative;\n  overflow: auto;\n  z-index: 2;\n");
+  return "\n  padding: ".concat(props.padding || '2.25em .5em .5em .5em', ";\n  resize: ").concat(props.resize && 'both' || 'none', ";\n  min-height: ").concat(props.minHeight || '11em', ";\n  min-width: ").concat(props.minWidth || '11em', ";\n  max-height: ").concat(props.maxHeight || null, ";\n  max-width: ").concat(props.maxWidth || '100%', ";\n  height: ").concat(props.height || null, ";\n  box-shadow: ").concat(props.boxShadow ? props.boxShadow : '0 20px 68px rgba(0, 0, 0, 0.55)', ";\n  border-radius: 0.5em;\n  position: relative;\n  overflow: auto;\n  z-index: 2;\n");
 };
 
 var after = function after(props) {
