@@ -59,7 +59,7 @@ export const Browser = styled.div`
     line-height: ${props => props.barHeight || '2rem'};
     border-bottom: ${props => props.divider || '0.05rem solid #ccc'};
     background: ${props => props.topbarColor || '#E6E6E6'};
-    color: #444;
+    color: ${props => props.topbarTitleColor || '#444'};
     ${before};
   }
 `
@@ -79,7 +79,7 @@ export const Terminal = styled.section`
     background: ${props => props.background || '#000'};
     border-bottom: ${props => props.divider || '0.05rem solid #000'};
     background: ${props => props.topbarColor || '#000'};
-    color: #ccc;
+    color: ${props => props.topbarTitleColor || '#CCC'};
     ${before};
   }
 `
@@ -98,7 +98,7 @@ export const MacTerminal = styled.section`
     line-height: ${props => props.barHeight || '1.4rem'};
     border-bottom: ${props => props.divider || '0.05rem solid #1D1F21'};
     background: ${props => props.topbarColor || '#E6E6E6'};
-    color: #444;
+    color: ${props => props.topbarTitleColor || '#444'};
     ${before};
   }
 `
