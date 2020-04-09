@@ -28,7 +28,7 @@ const after = props => `
   box-shadow: ${
     props.grayscale
       ? '0 0 0 0.2rem #8D8D92,  1.1rem 0 0 0.2rem #8D8D92, 2.2rem 0 0 0.2rem #8D8D92'
-      : '0 0 0 0.2rem #f85955,  1.2rem 0 0 0.2rem #fbbe3f, 2.3rem 0 0 0.2rem #45cc4b'
+      : '0 0 0 0.2rem #f85955,  1.1rem 0 0 0.2rem #fbbe3f, 2.2rem 0 0 0.2rem #45cc4b'
   };
 }
 `
