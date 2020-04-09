@@ -17,10 +17,13 @@
     "node": ">= 0.10.0"
   },
   "scripts": {
+    "start": "next",
     "build": "babel -d dist src",
+    "build-site": "next build",
+    "export": "npm run build-site && next export",
     "clean": "rm -rf dist && mkdir dist",
     "watch": "babel -w -d dist src",
-    "preversion": "npm run clean && npm run build",
+    "preversion": "npm run clean && npm run build && npm run export",
     "postpublish": "git push && git push --tag",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "jest",
@@ -52,10 +55,11 @@
     "enzyme-adapter-react-16": "^1.12.1",
     "enzyme-to-json": "^3.3.5",
     "jest": "^24.7.1",
-    "next": "^9.0.2",
+    "next": "9.3.4",
     "prettier": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-live": "2.2.2",
     "react-test-renderer": "^16.8.6"
   },
   "keywords": [
