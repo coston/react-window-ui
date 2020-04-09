@@ -43,6 +43,7 @@ export default () => (
 
 | Prop        | Type      | Description                                               |
 | ----------- | --------- | --------------------------------------------------------- |
+| topbarTitle | `string`  | title of the topbar                                       |
 | barHeight   | `string`  | height of the topbar                                      |
 | divider     | `string`  | css border values of topbar border-bottom                 |
 | padding     | `string`  | css padding of content widow                              |

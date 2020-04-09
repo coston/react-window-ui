@@ -15,6 +15,7 @@ const standard = props => `
   overflow: auto;
   z-index: 2;
 `
+
 const after = props => `
   content: '';
   position: absolute;
@@ -31,16 +32,18 @@ const after = props => `
 }
 `
 
-const before = () => `
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-z-index: 1;
-border-top-left-radius: 0.4em;
-border-top-right-radius: 0.4em;
-background-clip: padding-box;
+const before = props => `
+  content: '${props.topbarTitle || ''}';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+  background-clip: padding-box;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji";
+  text-align: center;
 `
 
 export const Browser = styled.div`
@@ -53,8 +56,10 @@ export const Browser = styled.div`
   }
   &:before {
     height: ${props => props.barHeight || '2em'};
+    line-height: ${props => props.barHeight || '2em'};
     border-bottom: ${props => props.divider || '0.05em solid #ccc'};
     background: ${props => props.topbarColor || '#E6E6E6'};
+    color: #444;
     ${before};
   }
 `
@@ -70,9 +75,11 @@ export const Terminal = styled.section`
   }
   &:before {
     height: ${props => props.barHeight || '2em'};
+    line-height: ${props => props.barHeight || '2em'};
     background: ${props => props.background || '#000'};
     border-bottom: ${props => props.divider || '0.05em solid #000'};
     background: ${props => props.topbarColor || '#000'};
+    color: #ccc;
     ${before};
   }
 `
@@ -88,8 +95,10 @@ export const MacTerminal = styled.section`
   }
   &:before {
     height: ${props => props.barHeight || '1.4em'};
+    line-height: ${props => props.barHeight || '1.4em'};
     border-bottom: ${props => props.divider || '0.05em solid #1D1F21'};
     background: ${props => props.topbarColor || '#E6E6E6'};
+    color: #444;
     ${before};
   }
 `
