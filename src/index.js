@@ -2,7 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const standard = props => `
-  padding: ${props.padding || '2.25em .5em .5em .5em'};
+  padding-left: ${props.padding || '.5em'};
+  padding-right: ${props.padding || '.5em'};
+  padding-bottom: ${props.padding || '.5em'};
   resize: ${(props.resize && 'both') || 'none'};
   min-height: ${props.minHeight || '11em'};
   min-width: ${props.minWidth || '11em'};
@@ -43,9 +45,12 @@ border-top-right-radius: 0.4em;
 background-clip: padding-box;
 `
 
+const getPaddingTop = props => (props.padding === '0' ? '0px' : props.padding) || '.5em';
+
 export const Browser = styled.div`
   border: ${props => props.border || '0.05em solid #AEAEAE'};
   background: ${props => props.background || '#fff'};
+  padding-top: calc(${getPaddingTop} + ${props => props => props.barHeight || '2em'});
   ${standard} &:after {
     top: 0.8em;
     left: 0.8em;
@@ -63,6 +68,7 @@ export const Terminal = styled.section`
   border: ${props => props.border || '0.05em solid #000'};
   background: ${props => props.background || '#000'};
   color: white;
+  padding-top: calc(${getPaddingTop} + ${props => props => props.barHeight || '2em'});
   ${standard} &:after {
     top: 0.8em;
     left: 0.8em;
@@ -81,6 +87,7 @@ export const MacTerminal = styled.section`
   border: ${props => props.border || '0.0em solid #1D1F21'};
   background: ${props => props.background || '#000'};
   color: white;
+  padding-top: calc(${getPaddingTop} + ${props => props => props.barHeight || '1.4em'});
   ${standard} &:after {
     top: 0.5em;
     left: 0.6em;
