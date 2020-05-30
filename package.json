@@ -47,7 +47,7 @@
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
     "@babel/plugin-transform-spread": "^7.10.1",
-    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.0.0",
     "babel-jest": "^24.7.1",
     "coveralls": "^3.0.3",
