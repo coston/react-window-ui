@@ -8,7 +8,7 @@
 
 ## Demo & Examples
 
-Live demo: [coston.io/react-window-ui](https://coston.io/react-window-ui/)
+Live demo: [react-window-ui.coston.io](https://react-window-ui.coston.io)
 
 ## What
 
