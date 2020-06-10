@@ -1,356 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render Browser 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "sc-bdVaJa",
-        "isStatic": false,
-        "rules": Array [
-          "
-  border: ",
-          [Function],
-          ";
-  background: ",
-          [Function],
-          ";
-  ",
-          [Function],
-          " &:after {
-    top: 0.8em;
-    left: 0.8em;
-    ",
-          [Function],
-          ";
-  }
-  &:before {
-    height: ",
-          [Function],
-          ";
-    border-bottom: ",
-          [Function],
-          ";
-    background: ",
-          [Function],
-          ";
-    ",
-          [Function],
-          ";
-  }
-",
-        ],
-      },
-      "displayName": "styled.div",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "sc-bdVaJa",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+<div
+  className="sc-AxjAm fsNCWl"
 />
 `;
 
 exports[`Render Browser with props 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "sc-bdVaJa",
-        "isStatic": false,
-        "rules": Array [
-          "
-  border: ",
-          [Function],
-          ";
-  background: ",
-          [Function],
-          ";
-  ",
-          [Function],
-          " &:after {
-    top: 0.8em;
-    left: 0.8em;
-    ",
-          [Function],
-          ";
-  }
-  &:before {
-    height: ",
-          [Function],
-          ";
-    border-bottom: ",
-          [Function],
-          ";
-    background: ",
-          [Function],
-          ";
-    ",
-          [Function],
-          ";
-  }
-",
-        ],
-      },
-      "displayName": "styled.div",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "sc-bdVaJa",
-      "target": "div",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
-  grayscale={true}
+<div
+  className="sc-AxjAm fafZzK"
 />
 `;
 
 exports[`Render MacTerminal 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "sc-htpNat",
-        "isStatic": false,
-        "rules": Array [
-          "
-  border: ",
-          [Function],
-          ";
-  background: ",
-          [Function],
-          ";
-  color: white;
-  ",
-          [Function],
-          " &:after {
-    top: 0.5em;
-    left: 0.6em;
-    ",
-          [Function],
-          ";
-  }
-  &:before {
-    height: ",
-          [Function],
-          ";
-    border-bottom: ",
-          [Function],
-          ";
-    background: ",
-          [Function],
-          ";
-    ",
-          [Function],
-          ";
-  }
-",
-        ],
-      },
-      "displayName": "styled.section",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "sc-htpNat",
-      "target": "section",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+<section
+  className="sc-AxiKw pRwAg"
 />
 `;
 
 exports[`Render MacTerminal with props 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "sc-htpNat",
-        "isStatic": false,
-        "rules": Array [
-          "
-  border: ",
-          [Function],
-          ";
-  background: ",
-          [Function],
-          ";
-  color: white;
-  ",
-          [Function],
-          " &:after {
-    top: 0.5em;
-    left: 0.6em;
-    ",
-          [Function],
-          ";
-  }
-  &:before {
-    height: ",
-          [Function],
-          ";
-    border-bottom: ",
-          [Function],
-          ";
-    background: ",
-          [Function],
-          ";
-    ",
-          [Function],
-          ";
-  }
-",
-        ],
-      },
-      "displayName": "styled.section",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "sc-htpNat",
-      "target": "section",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
-  grayscale={true}
+<section
+  className="sc-AxiKw gtWMlr"
 />
 `;
 
 exports[`Render Terminal 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "sc-bwzfXH",
-        "isStatic": false,
-        "rules": Array [
-          "
-  border: ",
-          [Function],
-          ";
-  background: ",
-          [Function],
-          ";
-  color: white;
-  ",
-          [Function],
-          " &:after {
-    top: 0.8em;
-    left: 0.8em;
-    ",
-          [Function],
-          ";
-  }
-  &:before {
-    height: ",
-          [Function],
-          ";
-    background: ",
-          [Function],
-          ";
-    border-bottom: ",
-          [Function],
-          ";
-    background: ",
-          [Function],
-          ";
-    ",
-          [Function],
-          ";
-  }
-",
-        ],
-      },
-      "displayName": "styled.section",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "sc-bwzfXH",
-      "target": "section",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
+<section
+  className="sc-AxirZ bKMzNX"
 />
 `;
 
 exports[`Render Terminal with props 1`] = `
-<StyledComponent
-  forwardedComponent={
-    Object {
-      "$$typeof": Symbol(react.forward_ref),
-      "attrs": Array [],
-      "componentStyle": ComponentStyle {
-        "componentId": "sc-bwzfXH",
-        "isStatic": false,
-        "rules": Array [
-          "
-  border: ",
-          [Function],
-          ";
-  background: ",
-          [Function],
-          ";
-  color: white;
-  ",
-          [Function],
-          " &:after {
-    top: 0.8em;
-    left: 0.8em;
-    ",
-          [Function],
-          ";
-  }
-  &:before {
-    height: ",
-          [Function],
-          ";
-    background: ",
-          [Function],
-          ";
-    border-bottom: ",
-          [Function],
-          ";
-    background: ",
-          [Function],
-          ";
-    ",
-          [Function],
-          ";
-  }
-",
-        ],
-      },
-      "displayName": "styled.section",
-      "foldedComponentIds": Array [],
-      "render": [Function],
-      "styledComponentId": "sc-bwzfXH",
-      "target": "section",
-      "toString": [Function],
-      "warnTooManyClasses": [Function],
-      "withComponent": [Function],
-    }
-  }
-  forwardedRef={null}
-  grayscale={true}
+<section
+  className="sc-AxirZ hoLNTA"
 />
 `;
