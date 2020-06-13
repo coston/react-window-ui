@@ -1,6 +1,5 @@
 # react-window-ui 🖼✨
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/coston/react-window-ui.svg)](https://greenkeeper.io/)
 [![Travis](https://img.shields.io/travis/coston/react-window-ui.svg)](https://travis-ci.org/coston/react-window-ui)
 [![npm version](https://badge.fury.io/js/react-window-ui.svg)](https://www.npmjs.com/package/react-window-ui)
 [![npm](https://img.shields.io/npm/dm/react-window-ui.svg)](https://www.npmjs.com/package/react-window-ui)
@@ -33,26 +32,37 @@ import React from "react";
 import { Browser } from "react-window-ui";
 
 export default () => (
-  <Browser>
-    <h1>wow</h1>
-  </Browser>
+  <>
+    <Browser>
+      <h3>Browser</h3>
+      <p>Use {"<Browser/>"} to frame browser content!</p>
+    </Browser>
+    <Terminal>
+      <h3>Terminal</h3>
+      <p>Use {"<Terminal/>"} to frame terminal content!</p>
+    </Terminal>
+    <MacTerminal>
+      <h3>MacTerminal</h3>
+      <p>Use {"<MacTerminal/>"} to frame terminal content!</p>
+    </MacTerminal>
+  </>
 );
 ```
 
 ## Options
 
-| Prop        | Type      | Description                                               |
-| ----------- | --------- | --------------------------------------------------------- |
-| topbarTitle | `string`  | title of the topbar                                       |
-| topbarTitleColor | `string` | color of topbar title                                 |
-| barHeight   | `string`  | height of the topbar                                      |
-| divider     | `string`  | css border values of topbar border-bottom                 |
-| padding     | `string`  | css padding of content widow                              |
-| topbarColor | `string`  | color of topbar                                           |
-| background  | `string`  | color of main content window                              |
-| border      | `string`  | css border values of outer border                         |
-| grayscale   | `boolean` | sets ui button to greyscale instead of red, yellow, green |
-| boxShadow   | `string`  | customize box shadow styles                               |
+| Prop             | Type      | Description                                               |
+| ---------------- | --------- | --------------------------------------------------------- |
+| topbarTitle      | `string`  | title of the topbar                                       |
+| topbarTitleColor | `string`  | color of topbar title                                     |
+| barHeight        | `string`  | height of the topbar                                      |
+| divider          | `string`  | css border values of topbar border-bottom                 |
+| padding          | `string`  | css padding of content widow                              |
+| topbarColor      | `string`  | color of topbar                                           |
+| background       | `string`  | color of main content window                              |
+| border           | `string`  | css border values of outer border                         |
+| grayscale        | `boolean` | sets ui button to greyscale instead of red, yellow, green |
+| boxShadow        | `string`  | customize box shadow styles                               |
 
 ## Development
 
