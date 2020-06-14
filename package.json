@@ -57,10 +57,10 @@
     "jest": "26.0.1",
     "next": "9.4.4",
     "prettier": "2.0.5",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "react-live": "2.2.2",
-    "react-test-renderer": "16.8.6"
+    "react-test-renderer": "16.13.1"
   },
   "keywords": [
     "react",
