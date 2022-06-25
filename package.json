@@ -55,7 +55,7 @@
     "enzyme-to-json": "3.6.2",
     "jest": "28.1.1",
     "next": "12.1.6",
-    "prettier": "2.6.2",
+    "prettier": "2.7.1",
     "prop-types": "15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
