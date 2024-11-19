@@ -73,10 +73,6 @@ npm run build
 
 Please help make this react component better. Submit any issue and/or make a pull request!
 
-### To Do
-
-- Write some good tests
-
 ## License
 
 Licensed under the GNU General Public License v3.0.
