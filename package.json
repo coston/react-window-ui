@@ -20,7 +20,7 @@
     "start": "next",
     "build": "babel -d dist src",
     "build-site": "next build",
-    "export": "npm run build-site && next export",
+    "export": "npm run build-site",
     "clean": "rm -rf dist && mkdir dist",
     "watch": "babel -w -d dist src",
     "preversion": "npm run clean && npm run build && npm run export",
